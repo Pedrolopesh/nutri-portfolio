@@ -11,9 +11,11 @@
           <div class="containe-rigth ac">
             <div class="header-title ac">
               <h1 class="title-1">Nutrista Profissional</h1>
-              <span class="separator-1"></span>
+              <span class="separator-1 ac"></span>
 
               <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, minima at excepturi facere commodi vitae rem laboriosam vero, asperiores et earum. Fugiat, sit reiciendis! Velit, unde. Obcaecati iusto asperiores temporibus.</p>
+            
+            
             </div>
           </div>
       
@@ -23,13 +25,14 @@
 </template>
 
 <script>
-
+import svgSet from '../assets/svgSet/svgSet'
 
 export default {
 
   components: {},
   created() {},
   data: () => ({
+    svgSet: svgSet,
     effect:true
   }),
   mounted() {},

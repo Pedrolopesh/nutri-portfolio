@@ -1,0 +1,44 @@
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    width: 600px;
+    // overflow: scroll;
+}
+
+.services-card{
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    // border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 6px 15px rgba(0, 0, 0, 0.424);
+    
+    &:hover{
+        transition: 0.7s;
+        transform: scale(1.1);
+    }
+}
+
+.container-card-image{
+    display: block;
+    min-height: 380px;
+}
+
+.image-card{
+    border-radius: 10px 10px 0px 0px;
+    width: 410px;
+    display: block;
+}
+
+.container-bottom-card{
+    display: block;
+    min-height: 100px;
+    max-width:100%;
+    // background-color: rgb(255, 196, 0);
+    background-color: rgb(48, 151, 38);
+    color: white;
+    // background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 247, 204));
+    border-radius: 0px 0px 9px 9px;
+    padding: 10px;
+
+}
