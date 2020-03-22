@@ -39,7 +39,7 @@
     <cards></cards>
 
     <div class="container mt-15">
-      <h2 class="title-1">Trabalhos Realizados</h2>
+      <h2 class="title-1">Lugares de Atendimento</h2>
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
     </div>
@@ -49,12 +49,7 @@
     </div>
 
     <div class="mt-8">
-    <div class="container">
-      <h2 class="title-1">Trabalhos Realizados</h2>
-      <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
-    </div>
-
+      <foot></foot>
     </div>
 
 
@@ -68,12 +63,14 @@ import sideMenu from '../components/cpmMenu.vue'
 import infoSection from '../components/infoSection.vue'
 import cards from '../components/jobCards.vue'
 import workSection from '../components/workSection.vue'
+import foot from '../components/footer.vue'
 
 // juliana-picture.jpeg
 export default {
   name: 'Home',
   components: {
     infoSection,
+    foot,
     workSection,
     cards,
     sideMenu,

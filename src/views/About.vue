@@ -2,28 +2,48 @@
   <div class="home">
 
     <span id="indixLocator"></span>
-    <div class="bg-img-home bg-full-screen bv-example-row container-header">
-    <div class="bg-mask">
 
 
     <b-col class="container-header brake-small">
       <!-- <cpmLogo></cpmLogo> -->
-      <sideMenu></sideMenu>
+      <secondSideMenu></secondSideMenu>
     </b-col>
       
     <!-- {{effect}} -->
-    <div class="text-container-home">
-      <h1 class="tile-home">Juliana Lopes</h1>
-      <p class="subtile-home">Nutricionista</p>
-    </div>
+
+  <sectionCV></sectionCV>
 
     <!-- <div :class="[effect ?'fadein-animation' : 'pre-animation']" class="container text-container-home">
     </div> -->
 
-    </div>
+    <div class="container mt-9">
+      <h2 class="title-1">Experiência</h2>
+      <span class="separator-1 ac"></span>
+      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
     </div>
 
-    <img alt="Vue logo" src="../assets/logo.png">
+    <certificate></certificate>
+
+    <div class="container mt-15">
+      <h2 class="title-1">Lugares que lá trabalhei</h2>
+      <span class="separator-1 ac"></span>
+      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+    </div>
+
+    <workedPlaces></workedPlaces>
+
+
+    <div class="container mt-15">
+      <h2 class="title-1">O que estão dizendo sobre as consultas</h2>
+      <span class="separator-1 ac"></span>
+      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+    </div>
+
+    <comemt></comemt>
+
+    <div class="mt-15"></div>
+    <foot></foot>
+
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -31,12 +51,23 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import sideMenu from '../components/cpmMenu.vue'
+import secondSideMenu from '../components/cpmSecondMenu.vue'
+import sectionCV from '../components/sectionCV.vue'
+import certificate from '../components/certificate.vue'
+import workedPlaces from '../components/workedPlaces.vue'
+import comemt from '../components/cpmComemt.vue'
+import foot from '../components/footer.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    sideMenu,
+    certificate,
+    sectionCV,
+    secondSideMenu,
+    workedPlaces,
+    foot,
+    comemt,
     HelloWorld
   }
 }

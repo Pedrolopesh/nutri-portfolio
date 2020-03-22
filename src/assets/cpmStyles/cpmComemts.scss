@@ -1,0 +1,28 @@
+.container-comentary{
+    display: flex;
+    max-width: 100%;
+}
+
+.card-comemt{
+    display: block;
+    background-color: rgba(241, 241, 241, 0.719);
+    max-width: 100%;
+    box-shadow: 7px 6px 15px rgba(0, 0, 0, 0.239);
+    width: 30%;
+    min-height: 300px;
+}
+.user-icon{
+    position: relative;
+    margin-top:-80px;
+    max-width: 20%;
+}
+
+.container-stars{
+    display: flex;
+    max-width: 100%;
+}
+
+.size-star-icon{
+    display: block;
+    width: 30px;
+}
