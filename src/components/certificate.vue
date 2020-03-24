@@ -1,6 +1,8 @@
 <template>
   <div class="ml-a">
 
+<div class="container-60 ac mt-9">
+
 <div class="container-certificate">
     <span class="size-certificate-icon mt-3 ac" v-html="svgSet.certificate_icon"></span>
     <p class="content-4 ml-3">Graduação na Universidade de Hard no curso de nutrição.</p>
@@ -16,6 +18,8 @@
     <p class="content-4 ml-3">Curso técnico de administração na Universidade Brasil.</p>
 </div>
 
+</div>
+  
   </div>
 </template>
 

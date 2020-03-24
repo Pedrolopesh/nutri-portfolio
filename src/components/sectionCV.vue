@@ -1,11 +1,11 @@
 <template>
-  <div class="ml-a">
+  <div class="mt-15">
 
-      <div class="container-sides container-info-section">
+      <div class="container-side-2 container-info-section ml-6">
 
 
 
-          <div class="containe-rigth ac">
+          <div class="container-rigth ac">
             <div class="header-title ac">
                 <h1 class="title-1 alg-txt-s">Juliana Lopes!</h1>
                 <span class="separator-2"></span>
@@ -17,8 +17,8 @@
             </div>
           </div>
       
-          <div class="containe-left">
-              <img src="../../public/juliana-picture.jpeg" class="personal-img-1 ml-a">
+          <div class="container-left">
+              <img src="../../public/juliana-picture.jpeg" class="personal-img-2 mr-6">
           </div>
 
       </div>

@@ -31,7 +31,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
 
-    <div class="container">
+    <div class="container mt-8">
       <h2 class="title-1">Trabalhos Realizados</h2>
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>

@@ -386,6 +386,26 @@ body{
     }
 }
 
+.container-side-2{
+    display: flex;
+    max-width: 80%;
+
+    .container-left{
+        display: block;
+        max-width: 35%;
+    }
+    
+    
+    .container-rigth{
+        display: block;
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
 .image-size-1{
     max-width: 100%;
     width: 800px;

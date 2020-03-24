@@ -1,7 +1,7 @@
 <template>
   <div class="ml-a">
 
-      <div class="container-sides container-info-section">
+      <div class="container-sides container-info-section mt-15">
 
           <div class="containe-left">
               <img src="../../public/juliana-picture.jpeg" class="personal-img-1 ml-a">
@@ -15,6 +15,41 @@
 
               <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, minima at excepturi facere commodi vitae rem laboriosam vero, asperiores et earum. Fugiat, sit reiciendis! Velit, unde. Obcaecati iusto asperiores temporibus.</p>
             
+            <div class="container-icons-subtitle mt-3">
+              
+              <div>
+                <span class="size-icon-3 cl-y" v-html="svgSet.family_icon"></span> 
+              </div>
+
+              <div>
+                <h2 class="subtitle-3 alg-txt-s">Nutrição Familiar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.</p>
+              </div>
+           
+            </div>
+            
+            <div class="container-icons-subtitle mt-3">
+              <div>
+                <span class="size-icon-3 cl-y" v-html="svgSet.shield_icon"></span>
+              </div>
+  
+              <div>
+                <h2 class="subtitle-3 alg-txt-s">Nutrição esportiva</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.</p>
+              </div>
+            </div>
+            
+            <div class="container-icons-subtitle mt-3">
+              <div>
+                <span class="size-icon-3 cl-y" v-html="svgSet.body_icon"></span>
+              </div>
+            
+            <div>
+              <h2 class="subtitle-3 alg-txt-s">Nutrição pessoal</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.</p>
+            </div>
+            
+            </div>
             
             </div>
           </div>

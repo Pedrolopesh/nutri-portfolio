@@ -12,6 +12,16 @@
     }
 }
 
+.personal-img-2{
+    display: block;
+    max-width: 100%;
+    width: 800px;
+    
+    @media screen and (max-width: 700px) {
+        width: 300px;
+    }
+}
+
 .container-info-section{
     display: flex;
     padding: 50px;
