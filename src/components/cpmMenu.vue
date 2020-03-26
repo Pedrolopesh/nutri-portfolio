@@ -1,0 +1,34 @@
+<template>
+  <div class="ml-a">
+
+<b-container class="bv-example-row mt-10 b-container mw-100">
+  <b-row align-h="end">
+  <router-link to="/"><b-button class="b-menu">Início</b-button></router-link>
+  <b-button class="b-menu">Trabalhos</b-button>
+  <b-button class="b-menu">Serviços</b-button>
+  <b-button class="b-menu">Contato</b-button>
+
+  <router-link to="/About"> <b-button class="b-menu">Sobre mim</b-button> </router-link>
+  </b-row>
+</b-container>
+
+
+  </div>
+</template>
+
+<script>
+
+
+export default {
+
+  components: {},
+  created() {},
+  data: () => ({
+    effect:true
+  }),
+  mounted() {},
+  methods: {},
+  computed: {},
+  watch: {}
+}
+</script>
