@@ -1,7 +1,7 @@
 <template>
   <div class="mt-15">
 
-      <div class="container-side-2 container-info-section ml-6">
+      <div class="container-side-2 container-info-section">
 
 
 

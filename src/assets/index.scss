@@ -249,6 +249,21 @@ body{
     text-align: center;
 }
 
+.clr-fb{
+    color: #3b5998;
+}
+
+.clr-is{
+    color: #c53189;
+}
+
+.clr-em{
+    color: #ea4335;
+}
+
+.clr-wh{
+    color: #43a04c;
+}
 
 .cw{
     color: white;
@@ -268,6 +283,14 @@ body{
 
 .cl-gra{
     color: grey;
+}
+
+.clr-w{
+    color: white;
+}
+
+.clr-b{
+    color: rgb(10, 10, 10);
 }
 
 .container-content-text{
@@ -388,7 +411,7 @@ body{
 
 .container-side-2{
     display: flex;
-    max-width: 80%;
+    max-width: 90%;
 
     .container-left{
         display: block;
@@ -405,6 +428,14 @@ body{
         flex-direction: column;
     }
 }
+.display-flex{
+    display: flex;
+}
+
+.display-block{
+    display: block;
+}
+
 
 .image-size-1{
     max-width: 100%;

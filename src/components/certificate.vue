@@ -1,7 +1,7 @@
 <template>
   <div class="ml-a">
 
-<div class="container-60 ac mt-9">
+<div class="container-70 ac mt-9">
 
 <div class="container-certificate">
     <span class="size-certificate-icon mt-3 ac" v-html="svgSet.certificate_icon"></span>
