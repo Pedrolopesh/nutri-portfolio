@@ -14,8 +14,8 @@
     <!-- {{effect}} -->
     <div class="text-container-home">
 
-      <h1 class="tile-home">Juliana Lopes</h1>
-      <p class="subtile-home">Nutricionista</p>
+      <h1 class="tile-home mp0">Juliana Lopes</h1>
+      <p class="subtile-home mp0">Nutricionista</p>
     </div>
 
     <!-- <div :class="[effect ?'fadein-animation' : 'pre-animation']" class="container text-container-home">

@@ -10,7 +10,7 @@
     <div class="container-card-image">
       <!-- src="../assets/logo.png" -->
 
-      <img :src="'./'+i.img_src" class="image-card ac">
+      <img :src="'./'+i.c" class="image-card ac">
   
     </div>
 

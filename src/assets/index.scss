@@ -89,6 +89,10 @@ body{
     width: 70%;
 }
 
+.w-300px{
+    width: 300px;
+}
+
 // ============== MARGINS TOP ==============
 
 .mt-1{
@@ -235,6 +239,49 @@ body{
 
 }
 // ============== MARGINS LEFT ==============
+
+
+// ============== MARGINS RIGTH ==============
+.mr-a{
+    margin-right: auto;
+}
+
+.mr-1{
+    margin-right: 10px;
+}
+.mr-2{
+    margin-right: 20px;
+}
+.mr-3{
+    margin-right: 30px;
+}
+.mr-4{
+    margin-right: 40px;
+}
+.mr-5{
+    margin-right: 50px;
+}
+.mr-6{
+    margin-right: 60px;
+}
+.mr-7{
+    margin-right: 70px;
+}
+.mr-8{
+    margin-right: 80px;
+}
+.mr-9{
+    margin-right: 90px;
+}
+.mr-10{
+    margin-right: 100px;
+    
+    @media screen and (max-width: 700px) {
+        margin-left: 70px;
+    }
+
+}
+// ============== MARGINS RIGTH ==============
 
 .mr-210{
     margin-right: 210px;

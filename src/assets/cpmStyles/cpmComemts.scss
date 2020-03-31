@@ -1,6 +1,14 @@
 .container-comentary{
     display: flex;
     max-width: 100%;
+    width: 100%;
+}
+
+.container-scroll-1{
+    min-height: 550px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
 .card-comemt{

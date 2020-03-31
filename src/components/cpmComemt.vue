@@ -1,23 +1,26 @@
 <template>
 <div class="mt-8">
-    <div class="container-comentary">
-        <div class="ml-5 card-comemt mt-10">
-            <img src="../../public/images/user-icon-1.png" class="user-icon">
 
-            <div class="container-stars mt-3 ml-3">
-                <!-- full_star_icon -->
-                <span class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
-                <span class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
-                <span class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
-                <span class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
-                <span class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
+    <!-- <div class="container-scroll-1" data-simplebar id="scroll"> -->
+    <div class="container-scroll-1" data-simplebar>
+
+        <div class="container-comentary mt-3 mb-5">
+
+            <div v-for="i in itens" :key="i" class="ml-3 mr-3 card-comemt mt-10">
+                <img :src="'./'+i.img_src" class="user-icon">
+
+                <div class="container-stars mt-3 ml-3">
+                    <span v-for="i in i.starts" :key="i" class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
+                </div>
+
+
+                <p class="content-3 w-300px p15 ml-2">{{i.content}}</p>
+                
+
+                <i class="content-3 ml-2 p5">{{i.name}}</i>
+                <i class="content-3 ml-2 p5 cl-gra">{{i.city}}</i>
             </div>
 
-
-            <p class="content-3 p15 ml-2">Acho que A XULIANA É DEMAIS VIADO SÒ AGRADEÇO NOTA UM MILHÃO</p>
-
-            <i class="content-3 ml-2 p5">Fenanda Silva</i>
-            <i class="content-3 ml-2 p5 cl-gra">Pirituba, SP</i>
         </div>
     </div>
 </div>
@@ -34,6 +37,12 @@ export default {
   created(){},
   data: () => ({
       svgSet: svgSet,
+      itens:[
+          {img_src:"user-icon-0.png",starts:5, content: "Gostei muito das consultas da Xuliana, muito profissional e atensiona", name:"Fenanda Silva", city:"Pirituba, SP"},
+          {img_src:"user-icon-1.png",starts:5, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
+          {img_src:"user-icon-1.png",starts:4, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
+          {img_src:"user-icon-1.png",starts:5, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
+      ]
   }),
   mounted() {},
   methods: {},
