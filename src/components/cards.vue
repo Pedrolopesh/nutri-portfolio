@@ -35,8 +35,10 @@ export default {
         slider.addEventListener('mousedown' , (e) => {
             isDowm = true;
             slider.classList.add('active');
-            // https://www.youtube.com/watch?v=C9EWifQ5xqA
-            console.log(e.pageX)
+            startX = e.pageX - slider.offsetLeft
+            scrollLeft = slider.scrollLeft
+
+            console.log(startX)
         })
         slider.addEventListener('mouseleave', () => {
             isDowm = false;
@@ -47,10 +49,14 @@ export default {
             slider.classList.remove('active');
             
         })
-        slider.addEventListener('mousemove', () => {
-
+        slider.addEventListener('mousemove', (e) => {
             if(!isDowm) return
-            console.count(isDowm)   
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft
+            // console.log({x, startX})
+            const walk = x - startX;
+            slider.scrollLeft = walk
+            console.count(walk)   
         })
     }
   },

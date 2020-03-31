@@ -4,6 +4,7 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
+import 'simplebar';
 
 
 import './assets/index.scss'

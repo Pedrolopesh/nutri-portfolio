@@ -52,13 +52,6 @@
       <foot></foot>
     </div>
 
-    <div class="mt-15">
-      <scrollCards></scrollCards>
-    </div>
-
-    <div class="mt-15">
-    </div>
-
   </div>
 </template>
 
@@ -70,7 +63,6 @@ import infoSection from '../components/infoSection.vue'
 import cards from '../components/jobCards.vue'
 import workSection from '../components/workSection.vue'
 import foot from '../components/footer.vue'
-import scrollCards from '../components/cards.vue'
 
 // juliana-picture.jpeg
 export default {
@@ -79,7 +71,6 @@ export default {
     infoSection,
     foot,
     workSection,
-    scrollCards,
     cards,
     sideMenu,
     HelloWorld

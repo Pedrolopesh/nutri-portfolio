@@ -1,8 +1,9 @@
 <template>
   <div class="mt-8">
 
+<div class="container-scroll" data-simplebar id="scroll">
 
-<div class="container-cards">
+<div class="container-cards mt-9 mb-5">
 
   <div v-for="i in itens" :key="i" class="ml-5 services-card">
   
@@ -22,6 +23,7 @@
     
     </div>
   </div>
+</div>
 </div>
     <!-- <button @click="animation()">click</button> -->
 </div>
