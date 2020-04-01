@@ -32,9 +32,9 @@
 
 
     <div class="container mt-8">
-      <h2 class="title-1">Trabalhos Realizados</h2>
+      <h2 class="title-1">Tipos de Trabalhos</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+      <p class="content-2 alg-txt-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo qui voluptas natus.</p>
     </div>
     <cards></cards>
 
@@ -60,7 +60,7 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import sideMenu from '../components/cpmMenu.vue'
 import infoSection from '../components/infoSection.vue'
-import cards from '../components/jobCards.vue'
+import cards from '../components/cpmCards.vue'
 import workSection from '../components/workSection.vue'
 import foot from '../components/footer.vue'
 

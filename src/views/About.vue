@@ -17,15 +17,15 @@
     </div> -->
 
     <div class="container mt-9">
-      <h2 class="title-1">Experiência</h2>
+      <h2 class="title-1">Graduação e Cursos</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+      <p class="content-2 alg-txt-c">A seguir confira algumas especialização que obtive.</p>
     </div>
 
     <certificate></certificate>
 
     <div class="container mt-15">
-      <h2 class="title-1">Lugares que lá trabalhei</h2>
+      <h2 class="title-1">Lugares que já trabalhei</h2>
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
     </div>
@@ -53,7 +53,7 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import secondSideMenu from '../components/cpmSecondMenu.vue'
 import sectionCV from '../components/sectionCV.vue'
-import certificate from '../components/certificate.vue'
+import certificate from '../components/cpmCertificate.vue'
 import workedPlaces from '../components/workedPlaces.vue'
 import comemt from '../components/cpmComemt.vue'
 import foot from '../components/footer.vue'

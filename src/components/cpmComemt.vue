@@ -49,4 +49,7 @@ export default {
   computed: {},
   watch: {}
 }
+
+// https://www.facebook.com/nutrijulianalopess/?ref=profile_intro_card
+// https://www.facebook.com/pg/nutrijulianalopess/reviews/?referrer=page_recommendations_see_all&ref=page_internal
 </script>

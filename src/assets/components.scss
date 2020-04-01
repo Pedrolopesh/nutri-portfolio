@@ -3,6 +3,7 @@
 @import './cpmStyles/cpmInfoSection.scss';
 @import './cpmStyles/cpmComemts.scss';
 @import './cpmStyles/cpmCards.scss';
+@import './cpmStyles/cpmCertificate.scss';
 
 @import './cpmStyles/cpmContact.scss';
 @import './cpmStyles/cpmFoot.scss';
@@ -28,7 +29,7 @@
 
 .title-3{
     margin-top: 10px;
-    font-size: 27px;
+    font-size: 35px;
     display: block;
 
     @media screen and (max-width:700px) {
@@ -106,15 +107,6 @@
     border-left: 0.5px solid white;
 }
 
-.size-certificate-icon{
-    display: block;
-    width: 170px;
-}
-
-.container-certificate{
-    display: flex;
-    max-width: 60%;
-}
 
 .fabebook-icon{
     color: #3b5998;

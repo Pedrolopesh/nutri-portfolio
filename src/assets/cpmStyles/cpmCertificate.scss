@@ -1,0 +1,48 @@
+.block-test{
+    background-color: red;
+    max-width: 100%;
+    width: 100%;
+    min-height: 50px;
+}
+
+.block-test-1{
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    width: 100%;
+    min-height: 50px;
+}
+
+
+
+.section-certificate{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.size-certificate-icon{
+    display: block;
+    width: 110px;
+}
+
+.container-blocks{
+    display: flex;
+}
+
+.container-certificate{
+    display: inline-block;
+    max-width: 100%;
+    width: 800px;
+
+    .block-icon{
+    display: inline-block;
+    max-width: 100%;
+    // width: 100%;
+}
+
+.block-content{
+    max-width: 60%;
+    // width: 100%;
+    display: inline-block;
+}
+}

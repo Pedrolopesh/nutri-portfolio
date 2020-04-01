@@ -1,6 +1,7 @@
 <template>
   <div class="mt-8">
 
+
 <div class="container-scroll" data-simplebar id="scroll">
 
 <div class="container-cards mt-9 mb-5">
@@ -17,8 +18,8 @@
     <div class="container-bottom-card">
       
       <!-- {{i.cardTitle}} -->
-      <h3>{{i.cardTitle}}</h3>
-      <p class="m0">{{i.contentCard}}</p>
+      <h2>{{i.cardTitle}}</h2>
+      <!-- <p class="m0">{{i.contentCard}}</p> -->
       
     
     </div>
@@ -50,11 +51,12 @@ export default {
       },
 
       itens:[
-        {cardTitle:"web Sites", contentCard:"Criação de websites",img_src:'01.jpg'},
-        {cardTitle:"Artes digitais", contentCard:"Criação de artes digitais",img_src:'02.jpg'},
-        {cardTitle:"Artes Visuais", contentCard:"Criação de artes para lojas",img_src:'03.jpg'},
-        {cardTitle:"Banco de dados", contentCard:"Conhecimento em Banco de dados",img_src:'04.jpg'},
-        {cardTitle:"Aplicações web", contentCard:"Construção de softwares",img_src:'05.jpg'}
+        {cardTitle:"Atendimentos Home Care", contentCard:"",img_src:'01.jpg'},
+        
+        {cardTitle:"Atendimentos em clinica e academias", contentCard:"",img_src:'02.jpg'},
+        {cardTitle:"Avaliação antropométrica", contentCard:"",img_src:'03.jpg'},
+        {cardTitle:"elaboração de planos alimentares", contentCard:"",img_src:'04.jpg'},
+        {cardTitle:"acompanhamento nutricional", contentCard:"",img_src:'05.jpg'}
       ]
   }),
   mounted() {
