@@ -11,7 +11,7 @@
     <div class="container-card-image">
       <!-- src="../assets/logo.png" -->
 
-      <img :src="'./'+i.c" class="image-card ac">
+      <img :src="'./'+i.img_src" class="image-card ac">
   
     </div>
 
@@ -51,12 +51,12 @@ export default {
       },
 
       itens:[
-        {cardTitle:"Atendimentos Home Care", contentCard:"",img_src:'01.jpg'},
+        {cardTitle:"Atendimentos Home Care", contentCard:"",img_src:'card-0.png'},
         
-        {cardTitle:"Atendimentos em clinica e academias", contentCard:"",img_src:'02.jpg'},
-        {cardTitle:"Avaliação antropométrica", contentCard:"",img_src:'03.jpg'},
-        {cardTitle:"elaboração de planos alimentares", contentCard:"",img_src:'04.jpg'},
-        {cardTitle:"acompanhamento nutricional", contentCard:"",img_src:'05.jpg'}
+        {cardTitle:"Atendimentos em clinica e academias", contentCard:"",img_src:'card-1.png'},
+        {cardTitle:"Avaliação antropométrica", contentCard:"",img_src:'card-2.png'},
+        {cardTitle:"elaboração de planos alimentares", contentCard:"",img_src:'card-3.png'},
+        {cardTitle:"acompanhamento nutricional", contentCard:"",img_src:'card-4.png'}
       ]
   }),
   mounted() {

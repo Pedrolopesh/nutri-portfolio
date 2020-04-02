@@ -1,5 +1,5 @@
 .bg-foot{
-    background-color: rgb(32, 32, 32);
+    background-color: #4C8837;
 
 }
 
@@ -36,6 +36,26 @@
     @media screen and (max-width:700px){
         flex-direction: column;
     }
+}
+
+
+.tile-footer{
+    color: white;
+    font-size: 50px;
+    text-align: start;
+    // font-family: 'Great Vibes', cursive;
+    // font-family: 'Parisienne', cursive; 
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 100;
+    
+    @media screen and (max-width:700px) {
+        font-size: 40px;
+    }
+}
+
+.rigth-block{
+    display: block;
+    max-width: 80%;
 }
 
 

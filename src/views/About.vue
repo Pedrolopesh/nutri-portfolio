@@ -8,9 +8,7 @@
       <!-- <cpmLogo></cpmLogo> -->
       <secondSideMenu></secondSideMenu>
     </b-col>
-      
     <!-- {{effect}} -->
-
   <sectionCV></sectionCV>
 
     <!-- <div :class="[effect ?'fadein-animation' : 'pre-animation']" class="container text-container-home">
@@ -21,7 +19,6 @@
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">A seguir confira algumas especialização que obtive.</p>
     </div>
-
     <certificate></certificate>
 
     <div class="container mt-15">
@@ -29,7 +26,6 @@
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
     </div>
-
     <workedPlaces></workedPlaces>
 
 
@@ -38,7 +34,6 @@
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
     </div>
-
     <comemt></comemt>
 
     <div class="mt-15"></div>

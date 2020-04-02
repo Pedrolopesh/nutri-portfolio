@@ -83,6 +83,17 @@
     }
 }
 
+.content-5{
+    padding: 10px;
+    font-size: 24px;
+    display: block;
+    text-align: justify;
+
+    @media screen and (max-width:700px) {
+    max-width: 90%;
+    }
+}
+
 .button-cv{
     display: flex;
 }
@@ -119,7 +130,40 @@
     display: block;
     width: 50px;
 }
+.icon-size-1{
+    width: 10px;
+}
+
+.icon-size-2{
+    display: block;
+    width: 20px;
+}
+
+.icon-size-3{
+    display: block;
+    width: 30px;
+}
+
+.icon-size-4{
+    display: block;
+    width: 40px;
+}
+
 
 .icon-size-5{
+    display: block;
     width: 50px;
+}
+
+.icon-size-6{
+    display: block;
+    width: 25px;
+}
+
+.separete{
+    max-width: 100%;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }

@@ -49,13 +49,10 @@
 
 .subtile-home{
     color: white;
-
     font-family: 'Pinyon Script', cursive;
     font-weight: 100;
-
     font-size: 80px;
     text-align: start;
-
     @media screen and (max-width:700px) {
         font-size: 40px;
     }
@@ -118,12 +115,4 @@
         background-color: #F92524;
         color: white;
     }
-}
-
-.separete{
-    max-width: 100%;
-    margin-top: 20px;
-    width: 50%;
-    display: block;
-    border-top: 1px solid #F92524;
 }
