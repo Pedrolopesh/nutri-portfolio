@@ -1,7 +1,7 @@
 <template>
   <div class="ml-a">
 
-<b-container class="bv-example-row mt-10 b-container mw-100">
+<b-container class="bv-example-row mt-10 b-container container-links-menu">
   <b-row align-h="end">
   <router-link to="/"><b-button class="b-menu">Início</b-button></router-link>
   <b-button class="b-menu">Trabalhos</b-button>

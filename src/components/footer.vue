@@ -6,10 +6,10 @@
 
             <div class="container-sides">
                 
-                <div class="container-left ml-a mt-5">
+                <div class="container-left ac mt-5">
                     <div class="rigth-block">
                         <h1 class="tile-footer">Juliana Lopes</h1>
-                        <p class="clr-w alg-txt-s">portifolio criado por Pedro Lopes através de ferramentas de desenvolvimento de softwares.</p>
+                        <p class="clr-w alg-txt-s">"umafrase de efeito haha".</p>
                        
                         <div class="container-flex">
                             <a target="_blank" href="https://www.facebook.com/pepe.pedroca"><span class="icon-size-4 clr-w mt-3 ml-2" v-html="svgSet.facebook_icon"></span></a>
@@ -26,14 +26,14 @@
                     </div>
                 </div>
  
-                <div class="container-rigth w-30 ac mt-5">
+                <div class="container-foot-rigth ac mt-5">
                     
                     <h1 class="title-2 clr-w">Entre em contato</h1>
                     <span class="separete"></span>
 
                     <div class="container-flex">
                         <div class="mt-4 ml-6">
-                            <a href="https://wa.me/5548999422614?text=olá%20amigo!" target="_blank"><span class="icon-size-6 clr-w mt-1 ml-2 inline-b" v-html="svgSet.phone_icon"></span><p class="content-3 clr-w inline-b">11 98565-9565</p></a>
+                            <a href="https://wa.me/5548999422614?text=olá%20amigo!" target="_blank"><span class="icon-size-6 clr-w mt-1 ml-2 inline-b" v-html="svgSet.phone_icon"></span><p class="mw-100 content-3 clr-w inline-b">11 98565-9565</p></a>
                         </div>
 
                         <div class="mt-4 ml-6">

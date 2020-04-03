@@ -24,7 +24,7 @@
     <div class="container mt-15">
       <h2 class="title-1">Lugares que já trabalhei</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+      <p class="content-2 alg-txt-c">A seguir, alguns dos lugares que trabalhei e obtive mais experiência no ramo da nutrição.</p>
     </div>
     <workedPlaces></workedPlaces>
 
@@ -32,7 +32,7 @@
     <div class="container mt-15">
       <h2 class="title-1">O que estão dizendo sobre as consultas</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+      <p class="content-2 alg-txt-c">Veja alguns dos comentários que forma feitos na página do facebook por alguns clientes.</p>
     </div>
     <comemt></comemt>
 

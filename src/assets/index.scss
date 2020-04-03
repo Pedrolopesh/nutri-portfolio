@@ -66,6 +66,10 @@ body{
 
 .p50{
     padding: 50px;
+    
+    @media screen and (max-width: 700px) {
+        padding: 0px;
+    }
 }
 
 // ============== ALIGN ==============
@@ -77,6 +81,10 @@ body{
 .mw-100{
     max-width: 100%;
 }
+.mw-80{
+    max-width: 80%;
+}
+
 .mw-70{
     max-width: 70%;
 }
@@ -88,6 +96,10 @@ body{
     max-width: 20%;
 }
 // ============== ALIGN ==============
+
+.w-100{
+    width: 100%;
+}
 
 .w-70{
     width: 70%;
@@ -228,9 +240,16 @@ body{
 }
 .ml-6{
     margin-left: 60px;
+    @media screen and (max-width: 700px) {
+        margin-left: 0px;
+    }
 }
 .ml-7{
     margin-left: 70px;
+
+    @media screen and (max-width: 700px) {
+        margin-left: 0px;
+    }
 }
 .ml-8{
     margin-left: 80px;
@@ -298,6 +317,14 @@ body{
 
 .alg-txt-s{
     text-align: start;
+}
+
+.alg-txt-s-media{
+    text-align: start;
+    
+    @media screen and (max-width:700px) {
+        text-align: center;
+    }
 }
 
 .alg-txt-c{
@@ -459,12 +486,20 @@ body{
     .container-left{
         display: block;
         max-width: 50%;
+        
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+        }
     }
     
     
     .container-rigth{
         display: block;
         max-width: 50%;
+        
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+        }
     }
 
     @media screen and (max-width: 700px) {
@@ -479,12 +514,20 @@ body{
     .container-left{
         display: block;
         max-width: 35%;
+        
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+        }
     }
     
     
     .container-rigth{
         display: block;
         max-width: 50%;
+
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+        }
     }
 
     @media screen and (max-width: 700px) {
@@ -531,6 +574,10 @@ body{
     font-size: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
+    
+    @media screen and (max-width: 700px) {
+        font-size: 25px;
+    }
 }
 
 .title-2{

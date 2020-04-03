@@ -33,14 +33,14 @@
     <div class="container mt-8">
       <h2 class="title-1">Tipos de Trabalhos</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo qui voluptas natus.</p>
+      <p class="content-2 alg-txt-c">Veja a seguir alguns dos tipos de trabalho que realizo, para maiores especificações entre em contato</p>
     </div>
     <cards></cards>
 
     <div class="container mt-15">
       <h2 class="title-1">Lugares de Atendimento</h2>
       <span class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, asperiores?</p>
+      <p class="content-2 alg-txt-c">Veja a seguir alguns dos lugares que atendo na reagião de São Paulo</p>
     </div>
 
     <div class="mt-6">
