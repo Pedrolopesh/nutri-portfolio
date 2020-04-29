@@ -32,11 +32,11 @@
                     <span class="separete"></span>
 
                     <div class="container-flex">
-                        <div class="mt-4 ml-6">
+                        <div class="ac">
                             <a href="https://wa.me/5548999422614?text=olá%20amigo!" target="_blank"><span class="icon-size-6 clr-w mt-1 ml-2 inline-b" v-html="svgSet.phone_icon"></span><p class="mw-100 content-3 clr-w inline-b">11 98565-9565</p></a>
                         </div>
 
-                        <div class="mt-4 ml-6">
+                        <div class="ac">
                             <a href="mailto: pedrolopeshls99@gmail.com" target="_blank"><span class="icon-size-6 clr-w mt-1 ml-2 inline-b" v-html="svgSet.email_icon"></span><p class="content-3 clr-w inline-b">juliana@gmail.com</p></a>
                         </div>
                     </div>

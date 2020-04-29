@@ -9,7 +9,7 @@
             <div class="header-title ac">
                 <h1 class="title-1 alg-txt-s-media">Juliana Lopes!</h1>
                 <span class="separator-2"></span>
-                <p class="content-4">Até o momento você pode conhecher mais sobre meu trabalho e atuais trabalho que estou realizando no momento, caso tenha interesse em ver de forma mais detalhada e especificações do meu perfil profissional, fica a vontade para fazer dowload de meu curriculo, me acompanhar nas redes sociais ou entrar em contato.</p>
+                <p class="content-4">Conheça mais sobre meu trabalho neste site, caso tenha interesse em ver de forma mais detalhada as especificações do meu perfil profissional, fique a vontade para fazer dowload de meu curriculo, me acompanhar nas redes sociais ou entrar em contato.</p>
                 
                 <div class="button-cv">
                     <button class="b-dowloadCV">Dowload CV</button> <button class="b-dowloadCV-s">↓</button>
