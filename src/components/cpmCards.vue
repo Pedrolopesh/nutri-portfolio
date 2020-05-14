@@ -3,10 +3,10 @@
 
 
 <div class="container-scroll" data-simplebar id="scroll">
-
+<!-- {{slideEffect}} -->
 <div class="container-cards mt-9 mb-5">
 
-  <div v-for="i in itens" :key="i" class="ml-5 services-card">
+  <div :class="[slideEffect ?'slide-fadein-animation-cards' : 'pre-animation']" v-for="i in itens" :key="i" class="services-card">
   
     <div class="container-card-image">
       <!-- src="../assets/logo.png" -->
@@ -32,6 +32,8 @@
 
 <script>
 export default {
+  props:["slideEffect"],
+
   name: 'Services',
 
   components: {},

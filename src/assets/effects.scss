@@ -195,3 +195,111 @@
         opacity: 1;
     }
   }
+
+.pre-slide-animation-txt{
+    display: block;
+    max-width: 525px;
+    width: 100%;
+    // margin-left: 89px;
+}
+
+.slide-fadein-animation-txt{
+    margin-left: 0;
+    animation-name: slide-fadein-animation-txt;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+}
+
+@keyframes slide-fadein-animation-txt{
+    0%  {
+        margin-left: 89px;
+        opacity: 0.1;
+    }
+    // 10%  {
+    //     margin-left: -100vw;
+    //     opacity: 0.2;
+    // }
+    // 20%  {
+    //     margin-left: -100vw;
+    //     opacity: 0.2;
+    // }
+    // 30%  {
+    //     margin-left: -100vw;
+    //     opacity: 0.2;
+    // }
+    // 40%  {
+    //     margin-left: -100vw;
+    //     opacity: 0.2;
+    // }
+    50%  {
+        margin-left: 49px;
+        opacity: 0.2;
+    }
+    60%  {
+        margin-left: 39px;
+        opacity: 0.3;
+    }
+    70%  {
+        margin-left: 29px;
+        opacity: 0.5;
+    }
+    80%  {
+        margin-left: 19px;
+        opacity: 0.7;
+    }
+    90%  {
+        margin-left: 9px;
+        opacity: 0.9;
+    }
+
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+  }
+
+  .slide-fadein-animation-cards{
+    margin-left: 50px;
+    animation-name: slide-fadein-animation-card;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+
+    @keyframes slide-fadein-animation-card{
+        10%  {
+            margin-left: 180px;
+            opacity: 0.1;
+        }
+
+        20%  {
+            margin-left: 140px;
+            opacity: 0.2;
+        }
+        30%  {
+            margin-left: 130px;
+            opacity: 0.2;
+        }
+        40%  {
+            margin-left: 120px;
+            opacity: 0.3;
+        }
+        60%  {
+            margin-left: 90px;
+            opacity: 0.5;
+        }
+        80%  {
+            margin-left: 70px;
+            opacity: 0.7;
+        }
+        90%  {
+            margin-left: 60px;
+            opacity: 0.9;
+        }
+    
+        100%{
+            margin-left: 50px;
+            opacity: 1;
+        }
+      }
+  }

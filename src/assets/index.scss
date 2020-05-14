@@ -587,3 +587,9 @@ body{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+.cp{
+    &:hover{
+        cursor: pointer;
+    }
+}

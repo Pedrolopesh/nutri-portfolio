@@ -14,9 +14,10 @@
     <!-- <div :class="[effect ?'fadein-animation' : 'pre-animation']" class="container text-container-home">
     </div> -->
 
+    <span id="firstLocator"></span>
     <div class="container mt-9">
-      <h2 class="title-1">Graduação e Cursos</h2>
-      <span class="separator-1 ac"></span>
+      <h2 :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Graduação e Cursos</h2>
+      <span :class="[effectData ?'fadein-animation-3' : 'pre-animation']" class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">A seguir confira algumas especialização que obtive.</p>
     </div>
     <certificate></certificate>
@@ -64,6 +65,35 @@ export default {
     foot,
     comemt,
     HelloWorld
-  }
+  },
+
+   data:()=> ({
+      txtEffect:true,
+      locator:{position:'',height:'',checked:''},
+   }),
+
+   methods:{
+     
+     getPositions(){
+       let firstLocator = document.querySelector("#firstLocator");
+       console.log("1) first= "+firstLocator.offsetTop)
+       this.locator.position = firstLocator.offsetTop;
+   
+       window.addEventListener("scroll", this.checkScroll);
+    },
+    checkScroll(){
+      // console.log(window.pageYOffset)
+
+      if(window.pageYOffset > (this.locator.position) - (this.locator.height + 400 )){
+        this.locator.checked = true
+        this.effect()
+      }
+    },
+
+    effect(){
+      this.txtEffect = true
+    },
+
+   }
 }
 </script>
