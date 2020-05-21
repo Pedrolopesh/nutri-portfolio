@@ -1,10 +1,10 @@
 <template>
   <div class="mt-8">
 
-    <div v-for="i in itens" :key="i" class="container-sides w-70 ac">
+    <div :class="[secondComponentEffect ?'fadein-animation-'+(i+2) : 'pre-animation']" v-for="(index, i) in itens" :key="i" class="container-sides w-70 ac">
 
       <div class="container-left p50">
-        <img :src="'./' + i.image" class="image-size-1">
+        <img :src="'./' + index.image" class="image-size-1">
       </div>
 
       <div class="container-rigth mt-5">
@@ -12,11 +12,11 @@
 
       <div class="container-flex">
         <span class="icon-size-6 clr-b mt-3 ml-2" v-html="svgSet.location_icon"></span>
-        <i class="content-5 mt-2">{{i.address}}</i>
+        <i class="content-5 mt-2">{{index.address}}</i>
       </div>
 
 
-        <p class="content-3">{{i.content}}</p>
+      <p class="content-3">{{index.content}}</p>
 
         <!-- <div class="display-flex">
           <span class="icon-size-5 clr-b mt-3 ml-2" v-html="svgSet.location_icon"></span>
@@ -33,6 +33,7 @@
 import svgSet from '../assets/svgSet/svgSet'
 
 export default {
+  props:['secondComponentEffect'],  
   name: 'Services',
 
   components: {},

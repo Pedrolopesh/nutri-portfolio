@@ -13,10 +13,8 @@
                     <span v-for="i in i.starts" :key="i" class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
                 </div>
 
-
                 <p class="content-3 w-300px p15 ml-2">{{i.content}}</p>
                 
-
                 <i class="content-3 ml-2 p5">{{i.name}}</i>
                 <i class="content-3 ml-2 p5 cl-gra">{{i.city}}</i>
             </div>
