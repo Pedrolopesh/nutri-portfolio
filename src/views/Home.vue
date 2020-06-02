@@ -50,7 +50,11 @@
     <div class="mt-6">
       <workSection></workSection>
     </div>
-
+    
+    <div class="mt-6">
+      <SocialMidia/>
+    </div>
+    
     <div class="mt-8">
       <foot></foot>
     </div>
@@ -65,6 +69,7 @@ import sideMenu from '../components/cpmMenu.vue'
 import infoSection from '../components/infoSection.vue'
 import cards from '../components/cpmCards.vue'
 import workSection from '../components/workSection.vue'
+import SocialMidia from '../components/SocialMidia.vue'
 import foot from '../components/footer.vue'
 
 // juliana-picture.jpeg
@@ -75,6 +80,7 @@ export default {
     foot,
     workSection,
     cards,
+    SocialMidia,
     sideMenu,
     HelloWorld
   },

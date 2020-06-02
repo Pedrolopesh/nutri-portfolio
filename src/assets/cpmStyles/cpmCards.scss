@@ -20,6 +20,34 @@
 //     background: linear-gradient(46deg, #309726,rgb(126, 255, 87));
 //     border-radius: 5px;
 // }
+.card{
+    display: block;
+    border: 1px solid black;
+}
+
+.title-card{
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.avatar-icon{
+    margin-top: 10px;
+    max-width: 8%;
+    width: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.around-icon{
+    border-radius: 100px;
+}
+
+.size-icon{
+    max-width: 8%;
+    width: 100%;
+    height: 40px;
+}
 
 .container-cards{
     display: flex;
@@ -30,10 +58,10 @@
 .services-card{
     display: block;
     max-width: 100%;
-    width: 400px;
+    width: 380px;
     // border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 7px 6px 15px rgba(0, 0, 0, 0.424);
+    box-shadow: 7px 6px 15px rgba(89, 146, 25, 0.568);
     
     &:hover{
         transition: 0.5s;
@@ -43,7 +71,7 @@
 
 .container-card-image{
     display: block;
-    min-height: 368px;
+    min-height: 340px;
 
     @media screen and (max-width:700px) {
         min-height: 268px;
@@ -52,11 +80,11 @@
 
 .image-card{
     border-radius: 10px 10px 0px 0px;
-    width: 398px;
+    width: 378px;
     display: block;
     
     @media screen and (max-width:700px) {
-        width: 298px;
+        width: 297px;
     }
 }
 
