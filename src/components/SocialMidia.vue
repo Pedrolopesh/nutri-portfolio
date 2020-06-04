@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="card mw-50 p15">
+        <div class="card instagram-card p15 ml-9 mr-a">
 
             <div class="d-flex">
                 <img class="avatar-icon" src="https://placekitten.com/300/300">
@@ -11,18 +11,14 @@
             </div>
 
             <div class="p15">
-                
-                <div>
 
-                </div>
-
-                <img src="https://placekitten.com/300/300">
+                <img class="img-size-instagram" src="../../public/img/apple.jpeg">
 
             </div>
             
             <div class="p5">
                 
-                <div class="d-flex">
+                <div class="d-flex ac alg-txt-s mw-80">
                     <b-icon-heart class="size-icon"/>
                     <b-icon-chat class="size-icon"/>
                     <b-icon-cursor class="size-icon"/>
