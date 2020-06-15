@@ -139,22 +139,22 @@ export default {
     checkScroll(){
       // console.log(window.pageYOffset)
 
-      if(window.pageYOffset > (this.locator.position) - (this.locator.height + 400 )){
+      if(window.pageYOffset > (this.locator.position) - (this.locator.height + 700 )){
         this.locator.checked = true
         this.effect()
       }
 
-      if(window.pageYOffset > (this.locator2.position) - (this.locator2.height + 550 )){
+      if(window.pageYOffset > (this.locator2.position) - (this.locator2.height + 800 )){
         this.locator2.checked = true
         this.secondEffectFunction()
       }
       
-      if(window.pageYOffset > (this.locator3.position) - (this.locator3.height + 800 )){
+      if(window.pageYOffset > (this.locator3.position) - (this.locator3.height + 900 )){
         this.locator3.checked = true
         this.slideEffectFunction()
       }
       
-      if(window.pageYOffset > (this.locator4.position) - (this.locator4.height + 400 )){
+      if(window.pageYOffset > (this.locator4.position) - (this.locator4.height + 800 )){
         this.locator4.checked = true
         this.slideEffectTxtFunction()
       }
