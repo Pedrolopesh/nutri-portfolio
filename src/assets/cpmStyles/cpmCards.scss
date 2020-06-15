@@ -2,6 +2,8 @@
 .container-scroll{
     min-height: 650px;
     display: block;
+    // max-width: 100%;
+    // width: 100%;
     // overflow: scroll;
     // overflow-y: hidden;
     // overflow-x: hidden;
@@ -66,9 +68,22 @@
 
 .container-cards{
     display: flex;
-    max-width: 100%;
-    width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
+    // overflow: scroll;
     
+}
+
+.heigth-container{
+    min-height: 40px;
+}
+
+.component-card{
+    width: 25% !important;
+    
+    @media screen and (max-width:700px) {
+        width: 90% !important;
+    }
 }
 
 .services-card{
@@ -96,7 +111,7 @@
 
 .image-card{
     border-radius: 10px 10px 0px 0px;
-    width: 378px;
+    width: 378px !important;
     display: block;
     
     @media screen and (max-width:700px) {
@@ -115,4 +130,18 @@
     border-radius: 0px 0px 9px 9px;
     padding: 10px;
 
+}
+
+
+.social-card{
+    width: 20% !important;
+    max-width: 100% !important;
+    
+    @media screen and (max-width: 1200px) {
+        width: 80% !important;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 80% !important;
+    }
 }

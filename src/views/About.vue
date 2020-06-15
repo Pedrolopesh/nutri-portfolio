@@ -11,9 +11,6 @@
     <!-- {{effect}} -->
   <sectionCV></sectionCV>
 
-    <!-- <div :class="[effect ?'fadein-animation' : 'pre-animation']" class="container text-container-home">
-    </div> -->
-
     <span id="firstLocator"></span>
     <div  class="container mt-9">
       <h2 :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Graduação e Cursos</h2>

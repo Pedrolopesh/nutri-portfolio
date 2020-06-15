@@ -1,31 +1,29 @@
 <template>
-  <div>
-
-
-<div class="container-scroll" data-simplebar id="scroll">
-<!-- {{slideEffect}} -->
-<div class="container-cards mt-9 mb-5">
-
-  <div :class="[slideEffect ?'slide-fadein-animation-cards' : 'pre-animation']" v-for="i in itens" :key="i" class="services-card con-vs-card cardx withHover">
-  
-    <div class="container-card-image">
-      <!-- src="../assets/logo.png" -->
-
-      <img :src="'./'+i.img_src" class="image-card ac">
-  
-    </div>
-
-    <div class="container-bottom-card">
-      
-      <!-- {{i.cardTitle}} -->
-      <h2>{{i.cardTitle}}</h2>
-      <!-- <p class="m0">{{i.contentCard}}</p> -->
-    </div>
-  </div>
-</div>
-</div>
-    <!-- <button @click="animation()">click</button> -->
-</div>
+    <vs-row>
+    <vs-col type="flex" class="container-cards p15" data-simplebar vs-w="6" id="scroll">
+        <div class="d-flex heigth-container">
+      <vs-card :class="[slideEffect ?'slide-fadein-animation-cards' : 'pre-animation']" v-for="i in itens" :key="i" actionable class="ml-3 cardx component-card">
+        <div slot="header">
+          <h3>
+            {{ i.cardTitle }}
+          </h3>
+        </div>
+        <div slot="media">
+          <img :src="'./'+i.img_src" class="image-card ac">
+        </div>
+        <div>
+          <h2>{{ i.contentCard }}</h2>
+        </div>
+        <div slot="footer">
+          <vs-row vs-justify="flex-end">
+            <vs-button color="primary" type="gradient" >View</vs-button>
+            <vs-button color="danger" type="gradient">Delete</vs-button>
+          </vs-row>
+        </div>
+      </vs-card>
+        </div>
+    </vs-col>
+  </vs-row>
 </template>
 
 <script>
@@ -53,7 +51,7 @@ export default {
       itens:[
         {cardTitle:"Atendimentos Home Care", contentCard:"",img_src:'card-0.png'},
         
-        {cardTitle:"Atendimentos em clinica e academias", contentCard:"",img_src:'card-1.png'},
+        {cardTitle:"Atendimentos em clinica", contentCard:"",img_src:'card-1.png'},
         {cardTitle:"Avaliação antropométrica", contentCard:"",img_src:'card-2.png'},
         {cardTitle:"elaboração de planos alimentares", contentCard:"",img_src:'card-3.png'},
         {cardTitle:"acompanhamento nutricional", contentCard:"",img_src:'card-4.png'}

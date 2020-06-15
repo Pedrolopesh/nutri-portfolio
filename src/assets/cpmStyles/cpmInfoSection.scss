@@ -24,7 +24,7 @@
 
 .container-info-section{
     display: flex;
-    padding: 50px;
+    // padding: 50px;
 }
 
 .separator-1{
@@ -46,4 +46,39 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.container-informations{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+
+    .container-info-rigth{
+        max-width: 100%;
+        width: 60%;
+
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .info-content{
+            max-width: 100%;
+            font-size: 20px;
+        }
+    }
+    .container-info-left{
+        max-width: 40%;
+
+        @media screen and (max-width: 700px) {
+            max-width: 100%;
+            width: 70%;
+        }
+    }
+}
+
+.principal-icons{
+    max-width: 100%;
+    width: 55px;
+    
 }

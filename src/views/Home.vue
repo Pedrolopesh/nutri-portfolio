@@ -12,7 +12,7 @@
     </b-col>
       
     <!-- {{effect}} -->
-    <div class="text-container-home">
+    <div class="text-container-home ac">
       <h1 class="tile-home mp0">Juliana Lopes</h1>
       <p class="subtile-home mp0">Nutricionista</p>
     </div>
@@ -24,8 +24,11 @@
     </div>
     </div>
 
-    <span id="firstLocator"></span>
+    <span class="divider"></span>
+    <span id="firstLocator" class="bg-green"></span>
+    <span v-html="svgSet.greenTop"></span>
     <infoSection :effectData="effectData"></infoSection>
+    <span v-html="svgSet.greenBottom"></span>
 
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -37,8 +40,9 @@
       <p class="content-2 alg-txt-c">Veja a seguir alguns dos tipos de trabalho que realizo, para maiores especificações entre em contato</p>
     </div>
     
-    <span id="thierdLocator"></span>
-    <cards :slideEffect="slideEffect"></cards>
+    <span id="thierdLocator" class="mt-8 display-block"></span>
+    <!-- <cpmCards :slideEffect="slideEffect"></cpmCards> -->
+    <Cards :slideEffect="slideEffect"/>
 
     <div :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container mt-15">
       <span id="txtLocator"></span>
@@ -51,7 +55,13 @@
       <workSection></workSection>
     </div>
     
-    <div class="mt-6">
+
+    <div class="mt-12">
+  
+      <span id="txtLocator"></span>
+      <h2 class="title-1">Redes Socíais</h2>
+      <span class="separator-1 ac"></span>
+      
       <SocialMidia/>
     </div>
     
@@ -67,10 +77,13 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import sideMenu from '../components/cpmMenu.vue'
 import infoSection from '../components/infoSection.vue'
-import cards from '../components/cpmCards.vue'
+import cpmCards from '../components/cpmCards.vue'
 import workSection from '../components/workSection.vue'
 import SocialMidia from '../components/SocialMidia.vue'
+import Cards from '@/components/cpmScroolCards.vue'
 import foot from '../components/footer.vue'
+import svgSet from '../assets/svgSet/svgSet'
+
 
 // juliana-picture.jpeg
 export default {
@@ -79,7 +92,8 @@ export default {
     infoSection,
     foot,
     workSection,
-    cards,
+    cpmCards,
+    Cards,
     SocialMidia,
     sideMenu,
     HelloWorld
@@ -90,6 +104,8 @@ export default {
     secondEffect:false,
     slideEffect:false,
     txtEffect:false,
+
+    svgSet:svgSet,
 
     locator:{position:'',height:'',checked:''},
     locator2:{position:'',height:'',checked:''},

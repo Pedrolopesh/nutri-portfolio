@@ -175,3 +175,20 @@
     display: block;
     border-bottom: 3px solid rgb(255, 255, 255);
 }
+
+.fixed-container{
+    display: flex;
+    max-width: 100%;
+    
+    .left-fixed-container{
+        display: block;
+        max-width: 50%;
+        width: 100%;
+    }
+    
+    .rigth-fixed-container{
+        display: block;
+        max-width: 50%;
+        width: 100%;
+    }
+}

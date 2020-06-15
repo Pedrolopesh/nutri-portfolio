@@ -1,37 +1,43 @@
 <template>
-    <div>
-        <div class="card instagram-card p15 ml-9 mr-a">
+    <div class="mt-7">
 
-            <div class="d-flex">
-                <img class="avatar-icon" src="https://placekitten.com/300/300">
+        <vs-row vs-justify="center">
+
+            <vs-col class="d-flex brake-small">
+            <vs-card v-for="(i,index) in 3" :key="index" class="cardx social-card ac">
+
+                <div slot="media">
+                <img src="../../public/card-0.png" class="image-card ac">
+                </div>
 
                 <div>
-                    <h1 class="title-card">Juliana Lopes</h1>
-                </div>
-            </div>
-
-            <div class="p15">
-
-                <img class="img-size-instagram" src="../../public/img/apple.jpeg">
-
-            </div>
-            
-            <div class="p5">
-                
-                <div class="d-flex ac alg-txt-s mw-80">
-                    <b-icon-heart class="size-icon"/>
-                    <b-icon-chat class="size-icon"/>
-                    <b-icon-cursor class="size-icon"/>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, consectetur.</span>
                 </div>
 
+                <div slot="footer">
+                <vs-row vs-justify="flex-end">
+                    <vs-button type="gradient" color="danger">A</vs-button>
+                    <vs-button color="primary">A</vs-button>
+                    <vs-button color="rgb(230,230,230)" color-text="rgb(50,50,50)">A</vs-button>
+                </vs-row>
+                </div>
 
+            </vs-card>
+            </vs-col>
 
-            </div>
+        </vs-row>
 
-        </div>
     </div>
 </template>
 
+
+<!-- <img class="img-size-instagram" src="../../public/img/apple.jpeg"> -->
+
+
+
+<!-- <b-icon-heart class="size-icon"/> -->
+<!-- <b-icon-chat class="size-icon"/> -->
+<!-- <b-icon-cursor class="size-icon"/> -->
 <script>
 
 

@@ -4,11 +4,14 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import Vuesax from 'vuesax'
 import 'simplebar';
 
 
 import './assets/index.scss'
+import 'vuesax/dist/vuesax.css' //Vuesax styles
 
+Vue.use(Vuesax)
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
