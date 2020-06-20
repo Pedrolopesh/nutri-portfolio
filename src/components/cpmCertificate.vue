@@ -1,7 +1,7 @@
 <template>
   <div class="ml-a">
 
-<div class="section-certificate ac mt-9">
+<div class="section-certificate ac mt-9 mb-5">
 
 <div v-for="(index, i) in itens" :key="i" class="container-certificate">
 

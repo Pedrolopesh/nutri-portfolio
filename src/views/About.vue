@@ -5,20 +5,24 @@
 
 
     <b-col class="container-header brake-small">
-      <!-- <cpmLogo></cpmLogo> -->
       <secondSideMenu></secondSideMenu>
     </b-col>
-    <!-- {{effect}} -->
-  <sectionCV></sectionCV>
 
-    <span id="firstLocator"></span>
-    <div  class="container mt-9">
-      <h2 :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Graduação e Cursos</h2>
-      <span :class="[txtEffect ?'fadein-animation-3' : 'pre-animation']" class="separator-1 ac"></span>
-      <p class="content-2 alg-txt-c">A seguir confira algumas especialização que obtive.</p>
+  <sectionCV/>
+
+    <div class="bg-green p50 mt-15">
+
+      <span id="firstLocator"></span>
+      <div  class="container mt-4">
+        <h2 :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Graduação e Cursos</h2>
+        <span :class="[txtEffect ?'fadein-animation-3' : 'pre-animation']" class="separator-1 ac"></span>
+        <p class="content-2 alg-txt-c">A seguir confira algumas especialização que obtive.</p>
+      </div>
+      
+      <span id="secondLocator"></span>
+      <certificate :componentEffect="componentEffect"></certificate>
+    
     </div>
-    <span id="secondLocator"></span>
-    <certificate :componentEffect="componentEffect"></certificate>
 
     <span id="thirdLocator"></span>
     <div :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container mt-15">
@@ -29,7 +33,7 @@
     <workedPlaces :secondComponentEffect="secondComponentEffect"></workedPlaces>
 
 
-    <div class="container mt-15">
+    <div class="container mt-15 ac">
       <h2 class="title-1">O que estão dizendo sobre as consultas</h2>
       <span class="separator-1 ac"></span>
       <p class="content-2 alg-txt-c">Veja alguns dos comentários que forma feitos na página do facebook por alguns clientes.</p>
@@ -37,15 +41,13 @@
     <comemt></comemt>
 
     <div class="mt-15"></div>
-    <foot></foot>
+    <foot/>
 
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 import secondSideMenu from '../components/cpmSecondMenu.vue'
 import sectionCV from '../components/sectionCV.vue'
 import certificate from '../components/cpmCertificate.vue'
@@ -63,7 +65,6 @@ export default {
     workedPlaces,
     foot,
     comemt,
-    HelloWorld
   },
 
    data:()=> ({

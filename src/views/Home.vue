@@ -44,7 +44,7 @@
     <!-- <cpmCards :slideEffect="slideEffect"></cpmCards> -->
     <Cards :slideEffect="slideEffect"/>
 
-    <div :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container mt-15">
+    <div :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container ac mt-15">
       <span id="txtLocator"></span>
       <h2 class="title-1">Lugares de Atendimento</h2>
       <span class="separator-1 ac"></span>

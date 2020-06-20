@@ -11,7 +11,7 @@ body{
 //     background-image: url('./src/images/background-1.jpg');
 // }
 .bg-green{
-    background-color: #63a44c;
+    background-color: #91CC7A;
 }
 
 .bg-white{
@@ -61,8 +61,16 @@ body{
     margin: 0;
 }
 
+.height-10{
+    height: 60px !important;
+}
+
+.height-5{
+    height: 50px !important;
+}
+
 .p5{
-    padding: 5px;
+    padding: 5px !important;
 }
 
 .p10{
@@ -417,6 +425,32 @@ body{
 
 
 // ==================== COLORS =====================
+
+// ==================== FONT SIZES =====================
+.font-s1{
+    font-size: 10px;
+}
+
+.font-s2{
+    font-size: 20px;
+}
+
+.font-s3{
+    font-size: 30px;
+}
+
+.font-s4{
+    font-size: 40px;
+}
+
+.font-s5{
+    font-size: 50px;
+}
+
+.font-s6{
+    font-size: 60px;
+}
+// ==================== FONT SIZES =====================
 .inline-b{
     display: inline-block;
 }
@@ -644,4 +678,15 @@ body{
 .svg-bottom{
     margin-top: -1px !important;
     margin-bottom: 90px;
+}
+
+.container{
+    display: block;
+    max-width: 90%;
+}
+
+.link-hover{
+    &:hover{
+        border-bottom: 1px solid black;
+    }
 }

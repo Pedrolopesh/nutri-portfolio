@@ -6,6 +6,7 @@ import store from './store'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import Vuesax from 'vuesax'
 import 'simplebar';
+import 'material-icons/iconfont/material-icons.css';
 
 
 import './assets/index.scss'

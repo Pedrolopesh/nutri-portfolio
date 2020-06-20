@@ -7,10 +7,18 @@
   <b-button :class="[effect ?'fadein-animation-1' : 'pre-animation']" class="b-menu">Início</b-button></router-link>
   <b-button :class="[effect ?'fadein-animation-2' : 'pre-animation']" class="b-menu">Trabalhos</b-button>
   <b-button :class="[effect ?'fadein-animation-3' : 'pre-animation']" class="b-menu">Serviços</b-button>
-  <b-button :class="[effect ?'fadein-animation-4' : 'pre-animation']" class="b-menu">Contato</b-button>
 
-  <router-link to="/About"> 
-  <b-button :class="[effect ?'fadein-animation-5' : 'pre-animation']" class="b-menu">Sobre mim</b-button> </router-link>
+  <router-link to="/Posts"> 
+    <b-button :class="[effect ?'fadein-animation-4' : 'pre-animation']" class="b-menu">Publicações</b-button> 
+  </router-link>
+
+  <b-button :class="[effect ?'fadein-animation-5' : 'pre-animation']" class="b-menu">Contato</b-button>
+
+  <router-link to="/About">
+  <b-button :class="[effect ?'fadein-animation-6' : 'pre-animation']" class="b-menu">Sobre mim</b-button> 
+</router-link>
+
+
   </b-row>
 </b-container>
 
