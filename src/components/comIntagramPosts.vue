@@ -9,7 +9,7 @@
                 <vs-card actionable class="cardx post-cards mt-3">
 
                     <div slot="media">
-                        <img :src='"/"+ i.image'>
+                        <img :src='i.imageURL' class="image-publication-size">
                     </div>
 
                     <!-- <div>
@@ -31,7 +31,7 @@
 
                 <div class="ac display-block content-side-posts p20 ml-2">
                     <vs-button color="success" class="p5 font-s2 alg-txt-s mr-a display-block mw-100 w-100" type="line">{{ i.title }}</vs-button>
-                    <p class="p5 mt-1 alg-txt-s">{{ i.comments }}</p>
+                    <p class="p5 mt-1 alg-txt-s">{{ i.content }}</p>
                 </div>
 
                     <div class="container-ads" v-if="index == 0">
@@ -56,14 +56,31 @@ export default {
     data:() => ({
         svgSet:svgSet,
 
-        currentx: 1,
+        // url:process.env.VUE_APP_LOCAL_URL,
+        url:process.env.VUE_APP_PROD_URL,
 
-        itens:[
-            {image:'card-0.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
-            {image:'card-1.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
-            {image:'card-3.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
-            {image:'card-4.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
-        ]
-    })
+        currentx: 1,
+        itens:[]
+
+        // itens:[
+        //     {image:'card-0.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
+        //     {image:'card-1.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
+        //     {image:'card-3.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
+        //     {image:'card-4.png', title:'titulo da postagem', comments:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.'},
+        // ]
+    }),
+
+    created(){
+        this.getAllPublication()
+    },
+
+    methods:{
+        getAllPublication(){
+            this.$http.get(this.url + '/all/publications').then(response => {
+                console.log(response)
+                this.itens = response.data
+            })
+        }
+    }
 }
 </script>
