@@ -18,10 +18,10 @@
 
                     <div slot="footer">
                         <vs-row vs-justify="flex-end" class="mt-1">
-                            <vs-button class="p10 mr-1 height-5" color="primary" type="gradient" >
+                            <vs-button target="_blank" :href="i.facebookURL" class="p10 mr-1 height-5" color="primary" type="gradient" >
                                 <span class="icon-size-3 clr-w" v-html="svgSet.facebook_icon"></span>
                             </vs-button>
-                            <vs-button class="p10 mr-1 height-5" color="danger" type="gradient">
+                            <vs-button target="_blank" :href="i.instagramURL" class="p10 mr-1 height-5" color="danger" type="gradient">
                                 <span class="icon-size-3 clr-w" v-html="svgSet.instagram_icon"></span>
                             </vs-button>
                         </vs-row>
@@ -45,7 +45,7 @@
                 <!-- <vs-button @click="currentx++">Increment</vs-button>
                 <vs-button @click="currentx--">Decrement</vs-button> -->
                 <br><br>
-                <vs-pagination class="pagination" color="#7ebf67" :total="2" v-model="currentx"></vs-pagination>
+                <vs-pagination @click="getAllPublication()" class="pagination" color="#7ebf67" :total="3" v-model="currentx"></vs-pagination>
             </div>
     </div>
 </template>
@@ -60,6 +60,7 @@ export default {
         url:process.env.VUE_APP_PROD_URL,
 
         currentx: 1,
+        // page:1,
         itens:[]
 
         // itens:[
@@ -76,11 +77,19 @@ export default {
 
     methods:{
         getAllPublication(){
-            this.$http.get(this.url + '/all/publications').then(response => {
+            let limit = 5
+            let page = this.currentx
+            this.$http.get(this.url + `/pagination/publications?page=${page}&limit=${limit}`).then(response => {
                 console.log(response)
-                this.itens = response.data
+                this.itens = response.data.result
             })
         }
-    }
+    },
+
+    watch: {
+        currentx: function (val) {
+            this.getAllPublication()
+        }
+    },
 }
 </script>

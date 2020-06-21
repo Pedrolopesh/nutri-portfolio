@@ -14,7 +14,7 @@
 
 <script>
 import SecondSideMenu from '../components/cpmSecondMenu.vue'
-import IntagramPosts from '../components/comIntagramPosts.vue'
+import IntagramPosts from '../components/cpmIntagramPosts.vue'
 import Foot from '../components/footer.vue'
 export default {
     data:() => ({
