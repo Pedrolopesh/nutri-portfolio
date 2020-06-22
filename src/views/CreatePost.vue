@@ -5,33 +5,57 @@
         <div class="container">
 
         <!-- <input type="file" name="asa" @change="functionFile(e)">    -->
-        <b-form-file
-        v-model="file"
-        :state="Boolean(file)"
-        placeholder="Choose a file or drop it here..."
-        drop-placeholder="Drop file here..."
-        ></b-form-file>
+            <div class="mw-50 ac">
+                <b-form-file v-model="photo" ref="file-input" class="mb-2" @change="functionFile"></b-form-file>
 
-        <vs-button color="danger" type="gradient" icon="favorite" @click="createPublication()">favorite</vs-button>
+                <vs-input class="inputx mt-3 ac" placeholder="Titulo da publicação" v-model="title"/>
+                <vs-textarea class="mt-1" label="Texto da publicação" v-model="content" />
+
+
+                <div class="display-flex">
+                    <vs-input class="inputx mt-1 ml-a" placeholder="Link da publicação" v-model="facebookURL"/>
+                    <span class="mr-a input-link-icons" v-html="svgSet.facebook_icon"></span>
+                </div>
+
+                <div class="display-flex">
+                    <vs-input class="inputx mt-1 ml-a" placeholder="Link da publicação" v-model="instagramURL"/>
+                    <span class="mr-a input-link-icons" v-html="svgSet.instagram_icon"></span>
+                </div>
+
+                <div class="mw-50 ac display-block">
+                    <vs-button color="danger" type="gradient" icon="add" class="mt-3" @click="createPublication()">favorite</vs-button>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </template>
 
 <script>
+import svgSet from '../assets/svgSet/svgSet'
+
 export default {
     data:() => ({
-        file:null,
+        photo:null,
+        title:'',
+        content:'',
+        facebookURL:'',
+        instagramURL:'',
+
+        svgSet: svgSet,
     }),
 
     methods: {
-        functionFile(param){
-            console.log(param)
+        functionFile(){
+            console.log(this.file)
         },
 
-        createPublication(){
-            console.log(this.file)
-        }
+        // createPublication(){
+        //     let body = {
+        //         photo:
+        //     }
+        // }
     },
 }
 </script>
