@@ -1,10 +1,15 @@
 <template>
     <div class="container display-flex ac mt-15">
         <vs-row class="display-block mb-3" vs-justify="end">
-            <p>Current: {{ currentx }}</p>
+            <!-- <p>Current: {{ currentx }}</p> -->
+
+                <div class="ac mt-8" v-if="noData">
+                    <h1>Não há publicações disponiveis</h1>
+                </div>
+
             <div class="container-cards-posts p15" v-for="(i, index) in itens" :key="index">
 
-                <div class="display-flex brake-small">
+                <div v-if="!noData" class="display-flex brake-small">
 
                 <vs-card actionable class="cardx post-cards mt-3">
 
@@ -41,11 +46,11 @@
             </div>
         </vs-row>
 
-            <div class="p15 mb-5">
+            <div :class="[noData ?'mb-20' : 'mb-5']" class="p15 mb-5">
                 <!-- <vs-button @click="currentx++">Increment</vs-button>
                 <vs-button @click="currentx--">Decrement</vs-button> -->
                 <br><br>
-                <vs-pagination @click="getAllPublication()" class="pagination" color="#7ebf67" :total="3" v-model="currentx"></vs-pagination>
+                <vs-pagination @click="getAllPublication()" class="pagination" color="#7ebf67" :total="2" v-model="currentx"></vs-pagination>
             </div>
     </div>
 </template>
@@ -60,7 +65,7 @@ export default {
         url:process.env.VUE_APP_PROD_URL,
 
         currentx: 1,
-        // page:1,
+        noData:'',
         itens:[]
 
         // itens:[
@@ -80,7 +85,24 @@ export default {
             let limit = 5
             let page = this.currentx
             this.$http.get(this.url + `/pagination/publications?page=${page}&limit=${limit}`).then(response => {
-                console.log(response)
+                // console.log(response.data)
+
+                let resultArray = response.data.result
+                // console.log(resultArray.length)
+
+                if(resultArray.length == 0){
+
+                    console.log("Não tem nada")
+                    // console.log(this.noData)
+                    this.noData = true
+
+                }else{
+                    
+                    console.log("Tem alguma coisa")
+                    this.noData = false
+                    // console.log(this.noData)
+                
+                }
                 this.itens = response.data.result
             })
         }

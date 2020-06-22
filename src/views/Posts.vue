@@ -4,7 +4,7 @@
             <SecondSideMenu/>
         </b-col>
 
-        <div class="">
+        <div>
             <IntagramPosts/>
         </div>
 
@@ -25,6 +25,7 @@ export default {
         SecondSideMenu,
         Foot,
         IntagramPosts
-    }
+    },
+
 }
 </script>
