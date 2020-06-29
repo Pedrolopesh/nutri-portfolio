@@ -63,16 +63,6 @@ export default {
         svgSet: svgSet,
 
         localItens:'',
-        // [
-        //     {   
-        //         image:'card-0.png', 
-        //         title:'titulo da postagem', 
-        //         content:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, eligendi.', 
-        //         instagramURL:'123',
-        //         facebookURL:'123',
-        //         imageURL:'http://res.cloudinary.com/nutriju-portifolio/image/upload/v1592770794/aamdkhuvdgcpedoqnzxw.jpg'
-        //     },
-        // ]
 
     }),
     computed:{

@@ -10,20 +10,20 @@
             header="Criar publicação"
         >
 
-            <div class="mw-50 ac">
+            <div class="container-post ac">
                 <b-form-file v-model="photo" ref="file-input" class="mb-2" @change="onFileSelected"></b-form-file>
 
-                <vs-input class="inputx mt-3 ac" placeholder="Titulo da publicação" v-model="title"/>
-                <vs-textarea class="mt-2" label="Texto da publicação" v-model="content" />
+                <vs-input class="inputx mt-4 ac" placeholder="Titulo da publicação" v-model="title"/>
+                <vs-textarea class="mt-3" label="Texto da publicação" v-model="content" />
 
 
-                <div class="display-flex">
-                    <vs-input class="inputx mt-2 ml-a" placeholder="Link da publicação" v-model="facebookURL"/>
+                <div class="display-flex mt-4">
+                    <vs-input class="inputx mt-1 ml-a" placeholder="Link da publicação" v-model="facebookURL"/>
                     <span class="mr-a input-link-icons" v-html="svgSet.facebook_icon"></span>
                 </div>
 
-                <div class="display-flex">
-                    <vs-input class="inputx mt-2 ml-a" placeholder="Link da publicação" v-model="instagramURL"/>
+                <div class="display-flex mt-4">
+                    <vs-input class="inputx mt-1 ml-a" placeholder="Link da publicação" v-model="instagramURL"/>
                     <span class="mr-a input-link-icons" v-html="svgSet.instagram_icon"></span>
                 </div>
 

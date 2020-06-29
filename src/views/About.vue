@@ -10,7 +10,8 @@
 
   <sectionCV/>
 
-    <div class="bg-green p50 mt-15">
+    <div class="bg-image-parallax rellax p50 mt-15" data-rellax-speed="-4">
+      <div class="custom-box-parralax ac">
 
       <span id="firstLocator"></span>
       <div  class="container mt-4">
@@ -22,6 +23,7 @@
       <span id="secondLocator"></span>
       <certificate :componentEffect="componentEffect"></certificate>
     
+      </div>
     </div>
 
     <span id="thirdLocator"></span>
@@ -98,7 +100,7 @@ export default {
        window.addEventListener("scroll", this.checkScroll);
     },
     checkScroll(){
-      console.log(window.pageYOffset)
+      // console.log(window.pageYOffset)
       // alert("A")
       if(window.pageYOffset > (this.locator.position) - (this.locator.height + 400 )){
         this.locator.checked = true

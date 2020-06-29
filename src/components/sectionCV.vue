@@ -21,7 +21,7 @@
           </div>
       
           <div class="container-left mt-3">
-              <img :class="[effect ?'fadein-animation-2' : 'pre-animation']" src="../../public/juliana-picture.jpeg" class="personal-img-2 mr-6">
+              <img :class="[effect ?'fadein-animation-2' : 'pre-animation']" src="../../public/picture-about.png" class="personal-img-2 mr-6">
           </div>
 
       </div>

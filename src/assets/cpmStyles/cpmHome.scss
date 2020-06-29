@@ -88,7 +88,6 @@
  
 .b-menu{
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     border:2px solid transparent !important;
     margin-left: 30px;
     background-color: rgba(255, 255, 255, 0) !important;
@@ -112,7 +111,7 @@
         border-bottom-color: rgb(255, 255, 255) !important;
     }
 
-    &:focus {outline:0;}
+    &:focus {outline:0 !important;}
 
 }
 

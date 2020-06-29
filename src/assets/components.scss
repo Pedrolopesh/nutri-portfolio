@@ -210,6 +210,7 @@
     display: block;
 
     @media screen and (max-width:700px) {
+        margin-top: 40px;
         max-width: 100% !important;
         width: 100% !important;
     }
@@ -258,4 +259,27 @@
         margin-left: 10px;
         height: 45px;
     }
+}
+
+.container-post{
+    display: block;
+    max-width: 50%;
+    width: 100%;
+
+    @media screen and (max-width:700px) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.b-second{
+    &:hover{color: rgb(87, 172, 87)}
+    &:focus {outline:0 !important}
+}
+
+.custom-box-parralax{
+    background-color: rgba(236, 236, 236, 0.7);
+    max-width: 90%;
+    padding: 30px;
+    width: 100%;
 }
