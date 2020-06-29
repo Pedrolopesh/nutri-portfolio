@@ -18,7 +18,7 @@
 
                 <vs-card actionable class="cardx post-cards mt-3">
 
-                    <div slot="media">
+                    <div slot="media" @click="sendPost(i)">
                         <img :src='i.imageURL' class="image-publication-size">
                     </div>
 
@@ -40,7 +40,7 @@
                 </vs-card>
 
                 <div class="ac display-block content-side-posts p20 ml-2">
-                    <vs-button color="success" class="p5 font-s2 alg-txt-s mr-a display-block mw-100 w-100" type="line">{{ i.title }}</vs-button>
+                    <vs-button color="success" class="p5 font-s2 alg-txt-s mr-a display-block mw-100 w-100" type="line" @click="sendPost(i)">{{ i.title }}</vs-button>
                     <p class="p5 mt-1 alg-txt-s">{{ i.content }}</p>
                 </div>
 
@@ -61,6 +61,8 @@
 </template>
 <script>
 import svgSet from '../assets/svgSet/svgSet'
+import { mapActions, mapGetters } from "vuex";
+
 
 export default {
     data:() => ({
@@ -87,13 +89,18 @@ export default {
     },
 
     methods:{
+        ...mapActions({
+            changePostData: 'changePostData',
+            changePostStep: 'changePostStep'
+        }),
+
         getAllPublication(){
             this.loading = true
 
             let limit = 5
             let page = this.currentx
             this.$http.get(this.url + `/pagination/publications?page=${page}&limit=${limit}`).then(response => {
-                // console.log(response.data)
+                // console.log(response.data)   
 
                 let resultArray = response.data.result
                 // console.log(resultArray.length)
@@ -103,7 +110,7 @@ export default {
                     setTimeout( () =>{
                         this.noData = true
                         this.loading = false
-                        console.log(this.loading)
+                        // console.log(this.loading)
                     
                 }, 2000);
 
@@ -115,6 +122,11 @@ export default {
                 }
                 this.itens = response.data.result
             })
+        },
+
+        sendPost(param){
+            this.changePostData(param)
+            this.changePostStep(2)
         }
     },
 
