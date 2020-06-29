@@ -1,5 +1,10 @@
 <template>
     <div class="container display-flex ac mt-15">
+
+        <div v-if="loading">
+            <b-spinner variant="success" label="Spinning"></b-spinner>
+        </div>
+
         <vs-row class="display-block mb-3" vs-justify="end">
             <!-- <p>Current: {{ currentx }}</p> -->
 
@@ -66,6 +71,7 @@ export default {
 
         currentx: 1,
         noData:'',
+        loading:false,
         itens:[]
 
         // itens:[
@@ -82,6 +88,8 @@ export default {
 
     methods:{
         getAllPublication(){
+            this.loading = true
+
             let limit = 5
             let page = this.currentx
             this.$http.get(this.url + `/pagination/publications?page=${page}&limit=${limit}`).then(response => {
@@ -92,15 +100,17 @@ export default {
 
                 if(resultArray.length == 0){
 
-                    console.log("Não tem nada")
-                    // console.log(this.noData)
-                    this.noData = true
+                    setTimeout( () =>{
+                        this.noData = true
+                        this.loading = false
+                        console.log(this.loading)
+                    
+                }, 2000);
 
                 }else{
                     
-                    console.log("Tem alguma coisa")
                     this.noData = false
-                    // console.log(this.noData)
+                    this.loading = false
                 
                 }
                 this.itens = response.data.result
