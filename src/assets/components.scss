@@ -53,7 +53,7 @@
 
 .content-2{
     padding: 10px;
-    font-size: 25px;
+    font-size: 23px;
     display: block;
     text-align: justify;
     
@@ -76,7 +76,7 @@
 
 .content-4{
     padding: 10px;
-    font-size: 26px;
+    font-size: 25px;
     display: block;
     text-align: justify;
     
@@ -179,17 +179,40 @@
 .fixed-container{
     display: flex;
     max-width: 100%;
-    
-    .left-fixed-container{
+
+    .default-container,.left-fixed-container, .rigth-fixed-container, .left-fixed-container-large{
         display: block;
         max-width: 50%;
         width: 100%;
     }
     
+    .left-fixed-container{
+        
+        @media screen and (max-width:700px) {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    }
+    
     .rigth-fixed-container{
-        display: block;
-        max-width: 100%;
-        width: 100%;
+        @media screen and (max-width:700px) {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    }
+
+    .left-fixed-container-large{
+        @media screen and (max-width:700px) {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    }
+    
+    .rigth-fixed-container-large{
+        @media screen and (max-width:700px) {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
     }
 }
 
@@ -273,7 +296,10 @@
 }
 
 .b-second{
-    &:hover{color: rgb(87, 172, 87)}
+    &:hover{
+        color: rgb(87, 172, 87);
+        border-bottom: 2px solid green !important;
+    }
     &:focus {outline:0 !important}
 }
 

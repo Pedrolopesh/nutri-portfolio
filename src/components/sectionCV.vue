@@ -40,7 +40,9 @@ export default {
     svgSet: svgSet,
     effect:true
   }),
-  mounted() {},
+  mounted(){
+
+  },
   methods: {},
   computed: {},
   watch: {}

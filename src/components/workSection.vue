@@ -1,7 +1,7 @@
 <template>
   <div class="mt-8">
 
-    <div class="fixed-container w-100 ac">
+    <div class="fixed-container brake-small w-100 ac">
 
       <div class="left-fixed-container">
         <img src="../../public/images/bg-consultorio-1.jpeg" class="image-size-1">
@@ -15,15 +15,15 @@
 
     </div>
 
-    <div class="container-sides w-100 ac">
+    <div class="fixed-container brake-small-reverse w-100 ac">
 
-      <div class="container-rigth p20">
+      <div class="left-fixed-container-large p20">
         <h3 class="title-3 cl-g alg-txt-s p10 mt-15">Consultório em Paulista, SP</h3>
         <i class="content-2">Rua Teixeira da Silva , 54 cj 64 Bela vista - Paulista</i>
         <p class="content-3 mw-80">Um consultório com otima localização e infraestrutura, nese espaço conforto e bem estar são um dos exemplos para esse lugar, diferente em muitos aspectos. </p>
       </div>
 
-      <div class="container-left">
+      <div class="left-fixed-container-large">
         <img src="../../public/images/bg-consultorio-2.jpeg" class="image-size-1">
       </div>
 

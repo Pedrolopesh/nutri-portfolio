@@ -10,8 +10,8 @@
 
   <sectionCV/>
 
-    <div class="bg-image-parallax rellax p50 mt-15" data-rellax-speed="-4">
-      <div class="custom-box-parralax ac">
+    <div class="bg-image-parallax rellax p50 mt-15">
+      <div class="custom-box-parralax ac" data-rellax-speed="5">
 
       <span id="firstLocator"></span>
       <div  class="container mt-4">
@@ -56,7 +56,7 @@ import certificate from '../components/cpmCertificate.vue'
 import workedPlaces from '../components/workedPlaces.vue'
 import comemt from '../components/cpmComemt.vue'
 import foot from '../components/footer.vue'
-
+import Rellax from 'rellax'
 
 export default {
   name: 'Home',
@@ -79,6 +79,8 @@ export default {
    }),
 
     created(){
+      var rellax = new Rellax('.rellax');
+
       setTimeout( () => {this.getPositions()}, 1000);
     },
 

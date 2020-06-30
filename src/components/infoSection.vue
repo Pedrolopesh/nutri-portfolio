@@ -13,7 +13,11 @@
               <span :class="[effectData ?'fadein-animation-3' : 'pre-animation']" class="separator-1 ac"></span>
 
             <div :class="[effectData ?'slide-fadein-animation-txt' : 'pre-animation']" class="pre-slide-animation-txt mw-100 mt-3">
-              <p class="info-content">Atuando na área de nutrição a 4 anos com cursos profisionalizantes, minha missão é fazer com que você tenha uma alimentação saudavel e balanceada sem precisar cortar suas comidas preferedias, veja nesse site mais sobre mim e saiba quem é Juliana Lopes</p>
+              <p class="info-content">
+                Atuando na área de nutrição a 4 anos com cursos profisionalizantes, 
+                minha missão é fazer com que você tenha uma alimentação saudavel e balanceada sem precisar cortar suas comidas preferedias, 
+                veja nesse site mais sobre mim e saiba quem é Juliana Lopes
+              </p>
             </div>
             
               <div v-for="(i,index) in datas" :key="index" class="mt-5">
@@ -49,9 +53,9 @@ export default {
       effect:true,
 
       datas:[
-        {cardTitle:"Nutricionista Autônoma", contentCard:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.",icon:svgSet.bag_icon},
-        {cardTitle:"Nutrição esportiva", contentCard:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.",icon:svgSet.esports},
-        {cardTitle:"Planos Alimentares", contentCard:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.",icon:svgSet.todoList},
+        {cardTitle:"Nutricionista Autônoma", contentCard:"Nutricionista autônoma com foco em qualidade de vida e alimentação saudavel",icon:svgSet.bag_icon},
+        {cardTitle:"Nutrição esportiva", contentCard:"Nutrição focada em resultados para atletas que procuram aumentar seu desempenho. ",icon:svgSet.esports},
+        {cardTitle:"Planos Alimentares", contentCard:"Planos indivisuais ou para toda familia, a melhor dieta e mais a mais adequada.",icon:svgSet.todoList},
       ]
   }),
   mounted() {},

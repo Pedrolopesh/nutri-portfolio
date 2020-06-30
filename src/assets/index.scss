@@ -511,9 +511,17 @@ body{
 .brake-small{
     // display: block;
     max-width: 100%;
-
+    
     @media screen and (max-width: 700px) {
         flex-direction: column;
+    }
+}
+
+.brake-small-reverse{
+    max-width: 100%;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column-reverse;
     }
 }
 
