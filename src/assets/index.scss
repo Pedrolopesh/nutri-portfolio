@@ -139,6 +139,10 @@ body{
 
 .w-70{
     width: 70%;
+
+    @media screen and (max-width:700px) {
+        width: 90%;
+    }
 }
 
 .w-30{
@@ -462,6 +466,9 @@ body{
     font-size: 60px;
 }
 // ==================== FONT SIZES =====================
+.alg-txt-e{
+    text-align: end;
+}
 .inline-b{
     display: inline-block;
 }
@@ -592,6 +599,7 @@ body{
         
         @media screen and (max-width: 700px) {
             max-width: 100%;
+            width: 100%;
         }
     }
 
@@ -602,7 +610,7 @@ body{
 
 .container-side-2{
     display: flex;
-    max-width: 90%;
+    max-width: 100%;
 
     .container-left{
         display: block;
@@ -660,6 +668,10 @@ body{
     display: block;
     max-width: 70%;
     width: 100%;
+    @media screen and (max-width: 700px) {
+        max-width: 95%;
+        width: 100%;
+    }
 }
 
 .title-1{

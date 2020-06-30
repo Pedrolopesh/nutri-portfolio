@@ -9,6 +9,8 @@
             <div v-for="i in itens" :key="i" class="ml-3 mr-3 card-comemt mt-10">
                 <img :src="'./'+i.img_src" class="user-icon">
 
+                <span class="icon-size-3 clr-r ml-a mr-3" v-html="i.svgData"></span>
+
                 <div class="container-stars mt-3 ml-3">
                     <span v-for="i in i.starts" :key="i" class="size-star-icon cl-y" v-html="svgSet.full_star_icon"></span>
                 </div>
@@ -17,6 +19,9 @@
                 
                 <i class="content-3 ml-2 p5">{{i.name}}</i>
                 <i class="content-3 ml-2 p5 cl-gra">{{i.city}}</i>
+
+                <!-- <div class="mt-5 alg-txt-e"> -->
+                <!-- </div> -->
             </div>
 
         </div>
@@ -36,10 +41,34 @@ export default {
   data: () => ({
       svgSet: svgSet,
       itens:[
-          {img_src:"user-icon-0.png",starts:5, content: "Gostei muito das consultas da Xuliana, muito profissional e atensiona", name:"Fenanda Silva", city:"Pirituba, SP"},
-          {img_src:"user-icon-1.png",starts:5, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
-          {img_src:"user-icon-1.png",starts:4, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
-          {img_src:"user-icon-1.png",starts:5, content: "Achei muito massa a consulta dessa Nutri maravilhos", name:"Pedro Lopes", city:"Florinanópolis, SC"},
+            {
+              img_src:"user-icon-0.png",
+              starts:5, 
+              content: "Gostei muito das consultas da Xuliana, muito profissional e atensiona", 
+              name:"Fenanda Silva", city:"Pirituba, SP", 
+              svgData:svgSet.instagram_icon 
+            },
+            {
+                img_src:"user-icon-1.png",
+                starts:5, 
+                content: "Achei muito massa a consulta dessa Nutri maravilhos", 
+                name:"Pedro Lopes", city:"Florinanópolis, SC", 
+                svgData:svgSet.instagram_icon
+            },
+            {
+              img_src:"user-icon-1.png",
+              starts:4, 
+              content: "Achei muito massa a consulta dessa Nutri maravilhos", 
+              name:"Pedro Lopes", city:"Florinanópolis, SC", 
+              svgData:svgSet.instagram_icon
+            },
+            {
+                img_src:"user-icon-1.png",
+                starts:5, 
+                content: "Achei muito massa a consulta dessa Nutri maravilhos", 
+                name:"Pedro Lopes", city:"Florinanópolis, SC", 
+                svgData:svgSet.instagram_icon
+            },
       ]
   }),
   mounted() {},

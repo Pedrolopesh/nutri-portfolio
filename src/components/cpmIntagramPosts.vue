@@ -1,7 +1,7 @@
 <template>
     <div class="container display-flex ac mt-15">
 
-        <div v-if="loading">
+        <div v-if="loading" class="mb-20">
             <b-spinner variant="success" label="Spinning"></b-spinner>
         </div>
 
@@ -51,11 +51,11 @@
             </div>
         </vs-row>
 
-            <div :class="[noData ?'mb-20' : 'mb-5']" class="p15 mb-5">
+            <div v-if="!loading" :class="[noData ?'mb-20' : 'mb-5']" class="p15 mb-5">
                 <!-- <vs-button @click="currentx++">Increment</vs-button>
                 <vs-button @click="currentx--">Decrement</vs-button> -->
                 <br><br>
-                <vs-pagination @click="getAllPublication()" class="pagination" color="#7ebf67" :total="2" v-model="currentx"></vs-pagination>
+                <vs-pagination @click="getAllPublication()" class="pagination" color="#7ebf67" :total="perPage" v-model="currentx"></vs-pagination>
             </div>
     </div>
 </template>
@@ -72,7 +72,9 @@ export default {
         url:process.env.VUE_APP_PROD_URL,
 
         currentx: 1,
+        perPage:1,
         noData:'',
+        nextDatas:'',
         loading:false,
         itens:[]
 
@@ -100,7 +102,11 @@ export default {
             let limit = 5
             let page = this.currentx
             this.$http.get(this.url + `/pagination/publications?page=${page}&limit=${limit}`).then(response => {
-                // console.log(response.data)   
+                console.log(response.data)
+                if(response.data.next){
+                    this.nextDatas = response.data.next
+                    this.makePagination()
+                }  
 
                 let resultArray = response.data.result
                 // console.log(resultArray.length)
@@ -124,6 +130,14 @@ export default {
             })
         },
 
+        makePagination(){
+            if(this.nextDatas){
+                this.perPage = this.nextDatas.page
+                console.log("chegou")
+                console.log(this.perPage)
+            }
+        },
+
         sendPost(param){
             this.changePostData(param)
             this.changePostStep(2)
@@ -137,3 +151,5 @@ export default {
     },
 }
 </script>
+
+
