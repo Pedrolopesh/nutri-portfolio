@@ -27,12 +27,17 @@
     // padding: 50px;
 }
 
-.separator-1{
+.separator-1, .separator-1-white, .separator-1-green{
     display: block;
     max-width: 100%;
     width: 10%;
-    border-bottom: 5px solid green;
     border-radius: 100px;
+}
+.separator-1-white{
+    border-bottom: 5px solid white;
+}
+.separator-1-green{
+    border-bottom: 5px solid #05ad05;
 }
 
 .separator-2{

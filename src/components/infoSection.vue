@@ -10,7 +10,7 @@
           <div class="container-info-rigth mt-15">
             <div class="header-title ac">
               <h1 :class="[effectData ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Nutrista Profissional</h1>
-              <span :class="[effectData ?'fadein-animation-3' : 'pre-animation']" class="separator-1 ac"></span>
+              <span :class="[effectData ?'fadein-animation-3' : 'pre-animation']" class="separator-1 separator-1-white clr-whi ac"></span>
 
             <div :class="[effectData ?'slide-fadein-animation-txt' : 'pre-animation']" class="pre-slide-animation-txt mw-100 mt-3">
               <p class="info-content">

@@ -42,6 +42,7 @@
                 <div class="ac display-block content-side-posts p20 ml-2">
                     <vs-button color="success" class="p5 font-s2 alg-txt-s mr-a display-block mw-100 w-100" type="line" @click="sendPost(i)">{{ i.title }}</vs-button>
                     <p class="p5 mt-1 alg-txt-s">{{ i.content }}</p>
+                    <!-- <p class="p5 mt-1 alg-txt-s" v-if="i.content.length <= 500">{{ i.content }}</p> -->
                 </div>
 
                     <div class="container-ads" v-if="index == 0">

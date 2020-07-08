@@ -72,6 +72,11 @@ export default {
 
             this.$http.post(this.url + '/create/publication',fd ).then(response => {
                 console.log(response)
+                if(response.data != ''){
+                    alert("criado com sucesso")
+                }
+            }).cacth(err => {
+                    alert(err)
             })
         }
     },

@@ -36,7 +36,7 @@
     <span id="secondLocator"></span>
     <div :class="[secondEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container mt-8 ac">
       <h2 class="title-1">Tipos de Trabalhos</h2>
-      <span class="separator-1 ac"></span>
+      <span class="separator-1 separator-1-green ac"></span>
       <p class="content-2 alg-txt-c">Veja a seguir alguns dos tipos de trabalho que realizo, para maiores especificações entre em contato</p>
     </div>
     
@@ -47,7 +47,7 @@
     <div :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container ac mt-15">
       <span id="txtLocator"></span>
       <h2 class="title-1">Lugares de Atendimento</h2>
-      <span class="separator-1 ac"></span>
+      <span class="separator-1 separator-1-green ac"></span>
       <p class="content-2 alg-txt-c">Veja a seguir alguns dos lugares que atendo na reagião de São Paulo</p>
     </div>
 
@@ -60,7 +60,7 @@
   
       <span id="txtLocator"></span>
       <h2 class="title-1">Redes Socíais</h2>
-      <span class="separator-1 ac"></span>
+      <span class="separator-1 separator-1-green ac"></span>
       
       <SocialMidia/>
     </div>
