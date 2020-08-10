@@ -13,6 +13,7 @@
     <div class="bg-image-parallax rellax p50 mt-15">
       <div class="custom-box-parralax ac" data-rellax-speed="5">
 
+      <span id="graduateSection"></span>
       <span id="firstLocator"></span>
       <div  class="container mt-4">
         <h2 :class="[txtEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="title-1">Graduação e Cursos</h2>
@@ -50,6 +51,7 @@
       <comemt></comemt>
     </div> -->
 
+    <span id="footer"></span>
     <div class="mt-15"></div>
     <foot/>
 

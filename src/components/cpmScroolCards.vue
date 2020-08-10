@@ -2,7 +2,7 @@
     <vs-row>
     <vs-col type="flex" class="container-cards p15" data-simplebar vs-w="6" id="scroll">
         <div class="d-flex heigth-container">
-      <vs-card :class="[slideEffect ?'slide-fadein-animation-cards' : 'pre-animation']" v-for="i in itens" :key="i" actionable class="ml-3 cardx component-card">
+      <vs-card :class="[slideEffect ?'slide-fadein-animation-cards' : 'pre-animation']" v-for="i in itens" :key="i" actionable class="ml-7 cardx component-card">
         <div slot="header">
           <h3>
             {{ i.cardTitle }}
@@ -16,8 +16,8 @@
         </div>
         <div slot="footer">
           <vs-row vs-justify="flex-end">
-            <vs-button color="primary" type="gradient" >View</vs-button>
-            <vs-button color="danger" type="gradient">Delete</vs-button>
+            <!-- <vs-button color="primary" type="gradient" >View</vs-button> -->
+            <vs-button color="danger" class="ml-3" type="gradient" icon="favorite"></vs-button>
           </vs-row>
         </div>
       </vs-card>

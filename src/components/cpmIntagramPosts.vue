@@ -45,9 +45,9 @@
                     <!-- <p class="p5 mt-1 alg-txt-s" v-if="i.content.length <= 500">{{ i.content }}</p> -->
                 </div>
 
-                    <div class="container-ads" v-if="index == 0">
+                    <!-- <div class="container-ads" v-if="index == 0">
                         anúncio
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </vs-row>

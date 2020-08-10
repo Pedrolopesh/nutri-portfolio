@@ -32,6 +32,7 @@
 
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <span id="workSection"></span>
 
     <span id="secondLocator"></span>
     <div :class="[secondEffect ?'slide-fadein-animation-txt' : 'pre-animation']" class="container mt-8 ac">
@@ -65,6 +66,7 @@
       <SocialMidia/>
     </div>
     
+    <span id="footer"></span>
     <div class="mt-8">
       <foot></foot>
     </div>
