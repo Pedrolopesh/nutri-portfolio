@@ -1,4 +1,6 @@
 # nutri-portfolio
+Portfolio for a nutritionist with professional information to better attract customers, website developed in vue js using Sass for styling
+
 
 ## Project setup
 ```
