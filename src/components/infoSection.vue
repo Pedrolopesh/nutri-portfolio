@@ -3,8 +3,14 @@
       <div class="container-informations container-info-section brake-small p60 mt_1">
 
           <div :class="[effectData ?'fadein-animation-2' : 'pre-animation']" class="container-info-left ac">
-              <img src="../../public/juliana-picture.jpeg" class="personal-img-1 ml-a mt-9">
+              <!-- <img src="../../public/juliana-picture.jpeg" class="personal-img-1 ml-a mt-9"> -->
+            <vs-card actionable class="cardx-gallery margins-gallery-1">
+              <div slot="media">
+                <img src="../../public/juliana-picture.jpeg" class="personal-img-1">
+              </div>
+            </vs-card>
           </div>
+
 
           <span id="locator"></span>
           <div class="container-info-rigth mt-15">
