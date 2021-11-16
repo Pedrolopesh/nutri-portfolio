@@ -10,9 +10,9 @@
 
         <div class="d-block block-icons-links ac mt-5">
           <div class="d-flex container-icons">
-              <a href="https://www.facebook.com/nutrijulianalopess" class="main-icon" v-html="svgSet.facebook_icon_white"></a>
-              <a href="https://www.instagram.com/nutrijulianalopess/" class="main-icon" v-html="svgSet.instagram_icon_white"></a>
-              <a href="https://vm.tiktok.com/ZM88owf2v/" class="main-icon" v-html="svgSet.tikTokIcon"></a>
+              <a target="_blank" href="https://www.facebook.com/nutrijulianalopess" class="main-icon" v-html="svgSet.facebook_icon_white"></a>
+              <a target="_blank" href="https://www.instagram.com/nutrijulianalopess/" class="main-icon" v-html="svgSet.instagram_icon_white"></a>
+              <a target="_blank" href="https://vm.tiktok.com/ZM88owf2v/" class="main-icon" v-html="svgSet.tikTokIcon"></a>
           </div>
         </div>
 
